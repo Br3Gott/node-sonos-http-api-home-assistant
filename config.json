@@ -1,0 +1,22 @@
+{
+  "name": "Sonos HTTP API",
+  "version": "1.0.4",
+  "slug": "sonos-http-api",
+  "description": "Sonos HTTP API with customizations",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "5005/tcp": 5005
+  },
+  "map": ["config:rw", "share:rw", "media:rw"],
+  "environment": {
+    "NODE_ENV": "production"
+  },
+  "host_network": true,
+  "hassio_api": true,
+  "hassio_role": "default",
+  "homeassistant_api": true
+}

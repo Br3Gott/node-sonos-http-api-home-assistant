@@ -1,13 +1,17 @@
 {
   "name": "Sonos HTTP API",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "slug": "sonos-http-api",
   "description": "Sonos HTTP API with customizations",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
-  "options": {},
-  "schema": {},
+  "options": {
+    "share_folder": ""
+  },
+  "schema": {
+    "share_folder": "str"
+  },
   "ports": {
     "5005/tcp": 5005
   },
